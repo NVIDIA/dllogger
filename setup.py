@@ -18,8 +18,8 @@ import pathlib
 README = (pathlib.Path(__file__).parent / "README.md").read_text()
 
 setuptools.setup(
-    name="DLLogger",
-    version="0.1.0",
+    name="nvidia-dllogger",
+    version="0.1.1",
     author="NVIDIA Corporation",
     description="NVIDIA DLLogger - logging for Deep Learning applications",
     long_description=README,
@@ -27,7 +27,7 @@ setuptools.setup(
     url="https://github.com/NVIDIA/dllogger",
     packages=["dllogger"],
     install_package_data=True,
-    license='Apache2',
+    license='Apache 2.0',
     license_file='./LICENSE',
     classifiers=[
         "Programming Language :: Python :: 3",
