@@ -16,10 +16,11 @@ This project emerged from the need for a unified logging schema for Deep Learnin
 
 ## Installation
 
-To install DLLogger, run:
+To install DLLogger, run (separate commands):
 
 ```bash
-pip install dllogger
+pip install nvidia-pyindex
+pip install nvidia-dllogger
 ```
 
 ## Quick Start Guide
@@ -110,4 +111,3 @@ for example, to create multiple and different logs from one script.
 from dllogger import Logger
 logger = Logger(backends=BACKEND_LIST)
 ```
-
