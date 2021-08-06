@@ -119,10 +119,10 @@ class StdOutBackend(Backend):
 
 
 class JSONStreamBackend(Backend):
-    def __init__(self, verbosity, filename):
+    def __init__(self, verbosity, filename, append=False):
         super().__init__(verbosity=verbosity)
         self._filename = filename
-        self.file = open(filename, "w")
+        self.file = open(filename, "a" if append else "w")
         atexit.register(self.file.close)
 
     def metadata(self, timestamp, elapsedtime, metric, metadata):
