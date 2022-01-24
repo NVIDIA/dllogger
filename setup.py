@@ -19,7 +19,7 @@ README = (pathlib.Path(__file__).parent / "README.md").read_text()
 
 setuptools.setup(
     name="DLLogger",
-    version="0.1.0",
+    version="1.0.0",
     author="NVIDIA Corporation",
     description="NVIDIA DLLogger - logging for Deep Learning applications",
     long_description=README,
