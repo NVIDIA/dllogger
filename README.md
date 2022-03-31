@@ -19,8 +19,7 @@ This project emerged from the need for a unified logging schema for Deep Learnin
 To install DLLogger, run (separate commands):
 
 ```bash
-pip install nvidia-pyindex
-pip install nvidia-dllogger
+pip install git+https://github.com/NVIDIA/dllogger#egg=dllogger
 ```
 
 ## Quick Start Guide
