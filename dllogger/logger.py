@@ -132,7 +132,7 @@ class JSONStreamBackend(Backend):
                     dict(
                         timestamp=str(timestamp.timestamp()),
                         elapsedtime=str(elapsedtime),
-                        datetime=str(timestamp),
+                        datetime=str(timestamp.astimezone()),
                         type="METADATA",
                         metric=metric,
                         metadata=metadata,
@@ -147,7 +147,7 @@ class JSONStreamBackend(Backend):
                 json.dumps(
                     dict(
                         timestamp=str(timestamp.timestamp()),
-                        datetime=str(timestamp),
+                        datetime=str(timestamp.astimezone()),
                         elapsedtime=str(elapsedtime),
                         type="LOG",
                         step=step,
