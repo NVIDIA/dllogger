@@ -86,7 +86,7 @@ Where:
 
 For more information, see the `default_*_format` functions in the `dllogger/logger.py` script.
 
-For example output, refer to the `examples/stdout.txt` file.
+For example output, refer to the `examples/example_stdout_log.txt` file.
 
 
 ### JSONStreamBackend
@@ -97,7 +97,7 @@ This backend saves JSON formatted lines into a file, adding time stamps for each
 JsonBackend(verbosity, file_name)
 ```
 
-For example output, refer to the `examples/dummy_resnet_log.json` file.
+For example output, refer to the `examples/example_resnet_log.json` file.
 
 
 ## Advanced usage
